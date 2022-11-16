@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp">
+
+
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
+        android:background="#BF1212"
+        android:contentDescription="@string/Wisata"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck"
+        tools:src="@tools:sample/avatars"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/img_item_photo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:text="@string/wisata_name"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_item_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginRight="16dp"
+        android:layout_toEndOf="@+id/img_item_photo"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:visibility="visible"
+        tools:text="@string/description"
+        tools:visibility="invisible" />
+</RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+
